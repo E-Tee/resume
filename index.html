@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бастич Дмитрий | Веб-разработчик</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Tektur:wght@400..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Шапка с навигацией -->
+    <header class="header">
+        <div class="container header__container">
+            <a href="#" class="header__logo">Bastich<span>&nbspD</span></a>
+
+            <nav class="nav">
+                <ul class="nav__list list--reset">
+                    <li class="nav__item"><a href="#about">Обо мне</a></li>
+                    <li class="nav__item"><a href="#experience">Опыт работы</a></li>
+                    <li class="nav__item"><a href="#skills">Навыки</a></li>
+                    <li class="nav__item"><a href="#projects">Проекты</a></li>
+                    <li class="nav__item"><a href="#contacts">Контакты</a></li>
+                </ul>
+
+                <button class="burger" id="burger">
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                    <span class="burger__line"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Герой-секция -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero__content">
+                <h1 class="hero__title">Бастич <span>Дмитрий</span></h1>
+                <p class="hero__descr">Веб-разработчик, специализирующийся на создании современных адаптивных сайтов и
+                    веб-приложений</p>
+
+                <div class="contact-info">
+                    <div class="contact-info__item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:89633231571">+7 (963) 3231571</a>
+                    </div>
+                    <div class="contact-info__item">
+                        <i class="fas fa-envelope"></i>
+                        <span>bdvetee@gmail.com</span>
+                    </div>
+                    <div class="contact-info__item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Санкт-Петербург</span>
+                    </div>
+                </div>
+                <div class="badges">
+                    <div class="badges__item">WordPress</div>
+                    <div class="badges__item">HTML/CSS</div>
+                    <div class="badges__item">JavaScript</div>
+                    <div class="badges__item">Figma</div>
+                    <div class="badges__item">Адаптивная верстка</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Обо мне -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Обо мне</h2>
+            </div>
+
+            <div class="card">
+                <div class="card__header">
+                    <i class="fas fa-user card__icon"></i>
+                    <h3 class="card__title">Личная информация</h3>
+                </div>
+                <p>Фронтенд-разработчик с опытом создания адаптивных и современных веб-сайтов. Специализируюсь на
+                    верстке HTML/CSS, разработке на WordPress и создании дизайна в Figma.</p>
+
+                <h4 class="card__subtitle">Готовность к работе</h4>
+                <p><b>Готов к переезду:</b> Азербайджан, Беларусь, Грузия, Казахстан, Кыргызстан, Россия, Узбекистан.
+                    Готов к
+                    командировкам.</p>
+
+                <h4 class="card__subtitle">Предпочтения</h4>
+                <p><b>Занятость:</b> полная, частичная, проектная работа, стажировка.<br>
+                    <b>График работы:</b> полный день, сменный график, гибкий график, удаленная работа, вахтовый метод.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Опыт работы -->
+    <section class="section" id="experience" style="background: rgba(0,0,0,0.05);">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Опыт работы</h2>
+            </div>
+
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card__header">
+                        <i class="fas fa-briefcase card__icon"></i>
+                        <h3 class="card__title">Фриланс</h3>
+                    </div>
+                    <h4 class="card__subtitle">Веб-разработчик / Дизайнер</h4>
+                    <div class="card__date">Июль 2023 — настоящее время (2 года)</div>
+                    <p>Разработка и дизайн веб-сайтов для различных клиентов. Основные направления:</p>
+                    <ul>
+                        <li>Верстка HTML/CSS, JavaScript</li>
+                        <li>Разработка сайтов на CMS (WordPress, Tilda)</li>
+                        <li>Профессиональная работа с WordPress: создание сайтов с
+                            использованием современных конструкторов (Bricks, Elementor, Gutenberg)</li>
+                        <li>Настройка и оптимизация плагинов для WooCommerce, SEO (Yoast SEO, Rank Math),
+                            производительности (WP Rocket, W3 Total Cache)</li>
+                        <li>Дизайн сайтов и презентаций в Figma и Photoshop</li>
+                        <li>SEO оптимизация: подбор семантического ядра, кластеризация, техническая оптимизация</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Навыки -->
+    <section class="section" id="skills">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Профессиональные навыки</h2>
+            </div>
+
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card__header">
+                        <i class="fas fa-code card__icon"></i>
+                        <h3 class="card__title">Технические навыки</h3>
+                    </div>
+                    <div class="skills">
+                        <div class="skills__item">HTML/CSS</div>
+                        <div class="skills__item">JavaScript</div>
+                        <div class="skills__item">WordPress</div>
+                        <div class="skills__item">Tilda</div>
+                        <div class="skills__item">Bitrix</div>
+                        <div class="skills__item">Bricks Builder</div>
+                        <div class="skills__item">Elementor</div>
+                        <div class="skills__item">Gutenberg</div>
+                        <div class="skills__item">Адаптивная верстка</div>
+                        <div class="skills__item">Git</div>
+                        <div class="skills__item">Figma</div>
+                        <div class="skills__item">Adobe Photoshop</div>
+                        <div class="skills__item">UI дизайн</div>
+                        <div class="skills__item">Создание макетов</div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__header">
+                        <i class="fas fa-language card__icon"></i>
+                        <h3 class="card__title">Языки</h3>
+                    </div>
+                    <p><strong>Русский</strong> - родной</p>
+                    <p><strong>Английский</strong> - pre-intermediate</p>
+                </div>
+
+                <div class="card">
+                    <div class="card__header">
+                        <i class="fas fa-users card__icon"></i>
+                        <h3 class="card__title">Soft Skills</h3>
+                    </div>
+                    <div class="skills">
+                        <div class="skills__item">Внимательность</div>
+                        <div class="skills__item">Ответственность</div>
+                        <div class="skills__item">Работа на результат</div>
+                        <div class="skills__item">Творческие способности</div>
+                        <div class="skills__item">Работа в команде</div>
+                        <div class="skills__item">Доброжелательность</div>
+                        <div class="skills__item">Обучаемость</div>
+                        <div class="skills__item">Саморазвитие</div>
+                        <div class="skills__item">Грамотная речь</div>
+                        <div class="skills__item">Деловая переписка</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Проекты -->
+    <section class="section" id="projects" style="background: rgba(0,0,0,0.05);">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Примеры работ</h2>
+            </div>
+
+            <div class="projects">
+                <div class="project-card">
+                    <div class="project-card__content">
+                        <h4 class="project-card__title">instsal.com</h4>
+                        <p>Коммерческий проект по установке и обслуживанию кондиционеров</p>
+                        <a href="https://instsal.com" class="project-card__link" target="_blank">Посмотреть проект <i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card__content">
+                        <h4 class="project-card__title">symphony.estate</h4>
+                        <p>Сайт жилого комплекса с современным дизайном и функционалом</p>
+                        <a href="https://symphony.estate" class="project-card__link" target="_blank">Посмотреть проект
+                            <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card__content">
+                        <h4 class="project-card__title">zk74.ru</h4>
+                        <p>Корпоративный сайт строительной компании</p>
+                        <a href="https://zk74.ru" class="project-card__link" target="_blank">Посмотреть проект <i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card__content">
+                        <h4 class="project-card__title">happy-hop.ru</h4>
+                        <p>Сайт компании по продаже батутов</p>
+                        <a href="https://happy-hop.ru" class="project-card__link" target="_blank">Посмотреть проект <i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card__content">
+                        <h4 class="project-card__title">batuthappyhop.ru</h4>
+                        <p>Интернет-магазин батутов</p>
+                        <a href="https://batuthappyhop.ru" class="project-card__link" target="_blank">Посмотреть проект
+                            <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-card__content">
+                        <h4 class="project-card__title">Учебные проекты</h4>
+                        <p>Примеры учебной верстки с адаптивным дизайном</p>
+                        <a href="https://e-tee.github.io/lagoona/" class="project-card__link" target="_blank">Lagoona <i
+                                class="fas fa-external-link-alt"></i></a>
+                        <a href="https://e-tee.github.io/evkl/" class="project-card__link" target="_blank">Evkl <i
+                                class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Образование -->
+    <section class="section" id="education">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Образование</h2>
+            </div>
+
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card__header">
+                        <i class="fas fa-graduation-cap card__icon"></i>
+                        <h3 class="card__title">SkillBox</h3>
+                    </div>
+                    <h4 class="card__subtitle">Фронтенд-разработка</h4>
+                </div>
+
+                <div class="card">
+                    <div class="card__header">
+                        <i class="fas fa-graduation-cap card__icon"></i>
+                        <h3 class="card__title">Worldskills</h3>
+                    </div>
+                    <h4 class="card__subtitle">Web-дизайн, разработка</h4>
+                </div>
+
+                <div class="card">
+                    <div class="card__header">
+                        <i class="fas fa-graduation-cap card__icon"></i>
+                        <h3 class="card__title">Geecbrains</h3>
+                    </div>
+                    <h4 class="card__subtitle">HTML/CSS</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="section" id="contacts">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="section__title">Контакты</h2>
+            </div>
+
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <div class="contact-card__icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-card__details">
+                        <h4>Телефон</h4>
+                        <p>+7 (963) 3231571</p>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-card__icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-card__details">
+                        <h4>Email</h4>
+                        <p>bdvetee@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-card__icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-card__details">
+                        <h4>Местоположение</h4>
+                        <p>Санкт-Петербург, Россия</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Бастич Дмитрий | Веб-разработчик</p>
+        </div>
+    </footer>
+
+    <script>
+        // Бургер меню
+        const burger = document.getElementById('burger');
+        const navList = document.querySelector('.nav__list');
+
+        burger.addEventListener('click', () => {
+            burger.classList.toggle('active');
+            navList.classList.toggle('active');
+
+            // Блокировка прокрутки при открытом меню
+            if (navList.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        });
+
+        // Закрытие меню при клике на ссылку
+        document.querySelectorAll('.nav__item a').forEach(link => {
+            link.addEventListener('click', () => {
+                burger.classList.remove('active');
+                navList.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+
+        // Плавная прокрутка для навигации
+        document.querySelectorAll('.nav__item a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Анимация карточек при прокрутке
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.card, .project-card, .contact-card').forEach(card => {
+            card.style.opacity = 0;
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+
+</html>
