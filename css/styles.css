@@ -1,10 +1,10 @@
 /* СБРОС & ПЕРЕМЕННЫЕ */
 :root {
-    --color-bg: #030014;
+    --color-bg: linear-gradient(135deg, #030014 0%, #0d0221 50%, #170638 100%);
     --color-text: #ffffff;
     --color-accent: #6c5ce7;
     --color-secondary: #a29bfe;
-    --font-primary: 'Space Grotesk', sans-serif;
+    --font-primary: 'Roboto', sans-serif;
     --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -126,27 +126,28 @@ button:hover~.cursor-follower {
     width: 100%;
 }
 
-/* ГЕРОЙ-СЕКЦИЯ */
+
 #hero {
     background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
 }
 
 .title-large {
     font-size: clamp(3rem, 8vw, 8rem);
-    font-weight: 700;
     line-height: 0.9;
     margin-bottom: 1rem;
     background: linear-gradient(to right, #ffffff, #a29bfe);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    font-weight: 500;
+    font-style: normal;
 }
 
 .subtitle {
-    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+    margin-bottom: 3rem;
+    font-size: clamp(2rem, 3vw, 3rem);
     font-weight: 300;
     max-width: 700px;
-    margin-bottom: 3rem;
     opacity: 0.9;
 }
 
@@ -240,6 +241,8 @@ button:hover~.cursor-follower {
     border-radius: 16px;
     border: 1px solid rgba(255, 255, 255, 0.05);
     transition: var(--transition);
+    background: linear-gradient(145deg, #0B021C, #0F0226);
+    box-shadow: 9.91px 9.91px 10px #0C021E, -9.91px -9.91px 10px #0E0224;
 }
 
 .info-card:hover {
@@ -306,19 +309,37 @@ button:hover~.cursor-follower {
 }
 
 .project-card:hover {
-    transform: translateY(-10px);
+    transform: scale(1.1, 1.1);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
 }
 
-.project-overlay {
-    padding: 2rem;
-    background: linear-gradient(to top, rgba(3, 0, 20, 0.9), transparent);
+.project-item__image {
     width: 100%;
+    height: 100%;
+    filter: brightness(70%);
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.project-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgb(0, 0, 0));
+    padding: 40px;
+    opacity: 1;
+    transform: translateY(20px);
     transition: var(--transition);
 }
 
 .project-card:hover .project-overlay {
-    background: linear-gradient(to top, rgba(108, 92, 231, 0.9), transparent);
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.project-card:hover .project-item__image {
+    transform: scale(1.05);
 }
 
 .project-overlay h4 {
@@ -331,13 +352,13 @@ button:hover~.cursor-follower {
     font-size: 0.95rem;
     margin-bottom: 1rem;
     opacity: 0.9;
+    color: #a29bfe
 }
 
 .project-overlay span {
     display: inline-block;
     font-weight: 600;
-    color: var(--color-accent);
-    transition: var(--transition);
+    color: #a29bfe transition: var(--transition);
 }
 
 .project-card:hover .project-overlay span {
@@ -394,20 +415,32 @@ button:hover~.cursor-follower {
     width: 100%;
 }
 
+main {
+    margin-bottom: 100px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2), 0 16px 20px rgba(0, 0, 0, 0.2);
+    background: var(--color-bg);
+}
+
 /* ФУТЕР */
 footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: -1;
     padding: 3rem 6vw;
     text-align: center;
     font-size: 0.9rem;
-    opacity: 0.7;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
+    background: var(--color-accent)
 }
 
 /* АДАПТИВ */
 @media (max-width: 768px) {
     .side-nav {
         left: 20px;
-        top: 80px;
+        top: 20px;
         transform: none;
     }
 
@@ -423,7 +456,7 @@ footer {
     }
 
     .title-large {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
 
     .section {
@@ -442,4 +475,6 @@ footer {
     body {
         cursor: auto;
     }
+}
+}
 }
